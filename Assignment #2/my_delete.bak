@@ -1,0 +1,10 @@
+#lang racket
+(define (my_delete atm a_list)
+   (cond
+     (null? a_list)
+     (eq? atm (car a_list))
+     (cons( atm (cdr a_list)))
+     (else (cons atm (cons (car a_list) (my_delete atm cdr(a_list))
+           )))))
+
+(my_delete 'a '(e d c b))

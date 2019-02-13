@@ -1,0 +1,9 @@
+#lang racket
+(define (rem_second a_list)
+  (if(null? (cdr a_list))
+     '()
+  (cons (car a_list) (cddr a_list))))
+
+(rem_second '(a (b c) c (d e) d))
+(rem_second '())
+(rem_second '(d e))

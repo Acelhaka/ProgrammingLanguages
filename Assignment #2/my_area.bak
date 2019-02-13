@@ -1,0 +1,10 @@
+#lang racket
+(define pi 3.1416)
+(define (my_area x r)
+  (if (equal? x 1)
+       (* pi r r)
+  #f))
+
+
+(my_area 1 10)
+      
